@@ -1,9 +1,38 @@
 :root {
   --color-white: #fff;
+  --color-gray-blue: #96a9b1;
+  --color-dark-gray: #3d3d3d;
+}
+
+body {
+  background-color: var(--color-gray-blue);
+  margin: 0;
+  padding: 0;
+}
+
+body header {
+  color: var(--color-white);
+  text-align: center;
+}
+
+#title {
+  font-style: italic;
 }
 
 .container {
   background-color: var(--color-white);
   margin: auto;
   max-width: 800px;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url("/assets/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  body header {
+    color: var(--color-dark-gray);
+  }
 }
