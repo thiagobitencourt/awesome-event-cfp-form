@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 :root {
   --color-white: #fff;
   --color-gray-blue: #96a9b1;
@@ -5,6 +7,7 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: var(--color-gray-blue);
   margin: 0;
   padding: 0;
@@ -12,11 +15,20 @@ body {
 
 body header {
   color: var(--color-white);
+  font-weight: bold;
   text-align: center;
 }
 
 #title {
   font-style: italic;
+  margin: 10px auto;
+  font-size: 36px;
+}
+
+#description {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 .container {
