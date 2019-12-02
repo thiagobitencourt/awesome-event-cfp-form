@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Awesome event - Call for papers form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Awesome event</h1>
+        <p id="description">Please submit your paper to this awesome event</p>
+      </header>
+
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">
+            <span>Full name </span>
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            id="name"
+            type="text"
+            name="fullname"
+            placeholder="What's your full name?"
+            required
+          />
+        </div>
+
+        <div>
+          <label id="email-label" for="email">
+            <span>Email address </span>
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="What's yous email address?"
+            required
+          />
+        </div>
+
+        <div>
+          <label id="number-label">
+            <span>Presentation time</span>
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            type="number"
+            id="number"
+            min="1"
+            max="8"
+            placeholder="how much time do you need?"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="dropdown">
+            When would you like to present?
+          </label>
+          <div>
+            <select id="dropdown">
+              <option value="">Choose an option</option>
+              <option value="">First day - Morning</option>
+              <option value="">First day - Afternoon</option>
+              <option value="">First day - Night</option>
+              <option value="">Second day - Morning</option>
+              <option value="">Second day - Afternoon</option>
+              <option value="">Second day - Night</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label>What are you submittin?</label>
+          <div>
+            <label>
+              <input type="radio" name="sumtitionType" value="talk" />
+              <span>Talk</span>
+            </label>
+            <label>
+              <input type="radio" name="sumtitionType" value="workshop" />
+              <span>Workshop</span>
+            </label>
+            <label>
+              <input type="radio" name="sumtitionType" value="fulltraining" />
+              <span>Full training</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label>Witch sections it belogns?</label>
+          <div>
+            <label>
+              <input type="checkbox" name="section" value="management" />
+              <span>Management</span>
+            </label>
+            <label>
+              <input type="checkbox" name="section" value="busines" />
+              <span>Busines</span>
+            </label>
+            <label>
+              <input type="checkbox" name="section" value="development" />
+              <span>Development</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <textarea cols="50" rows="8"></textarea>
+        </div>
+
+        <div>
+          <button type="submit" id="submit">Submit</button>
+          <button type="reset" id="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

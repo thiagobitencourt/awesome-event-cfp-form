@@ -1,0 +1,9 @@
+:root {
+  --color-white: #fff;
+}
+
+.container {
+  background-color: var(--color-white);
+  margin: auto;
+  max-width: 800px;
+}
