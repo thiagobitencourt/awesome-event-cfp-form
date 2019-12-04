@@ -12,6 +12,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/styles/radio-button.css" />
+    <link rel="stylesheet" href="./assets/styles/checkbox-button.css" />
   </head>
   <body>
     <header>
@@ -117,16 +118,54 @@
         <div class="form-field">
           <label>Witch sections it belogns?</label>
           <div class="group">
-            <label>
-              <input type="checkbox" name="section" value="management" />
+            <input
+              type="checkbox"
+              name="section"
+              value="management"
+              class="input-checkbox"
+              id="checkox-1"
+              style="display: none;"
+            />
+            <label class="checkbox" for="checkox-1">
+              <span>
+                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                  <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+              </span>
               <span>Management</span>
             </label>
-            <label>
-              <input type="checkbox" name="section" value="busines" />
+
+            <input
+              type="checkbox"
+              name="section"
+              value="busines"
+              class="input-checkbox"
+              id="checkox-2"
+              style="display: none;"
+            />
+            <label class="checkbox" for="checkox-2">
+              <span>
+                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                  <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+              </span>
               <span>Busines</span>
             </label>
-            <label>
-              <input type="checkbox" name="section" value="development" />
+
+            <input
+              type="checkbox"
+              name="section"
+              value="development"
+              class="input-checkbox"
+              id="checkox-3"
+              style="display: none;"
+            />
+            <label class="checkbox" for="checkox-3">
+              <span>
+                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                  <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+              </span>
               <span>Development</span>
             </label>
           </div>
