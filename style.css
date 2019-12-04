@@ -6,6 +6,7 @@
   --color-dark-gray: #3d3d3d;
   --color-gray-blue: #96a9b1;
   --color-primary: #00b0da;
+  --color-primary-light: #12d4c8;
 }
 
 body {
@@ -38,12 +39,17 @@ body header {
   background-color: var(--color-white);
   margin: auto;
   max-width: 800px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-main h2 {
+.container h2 {
   margin: 0;
-  margin-top: -15px;
   text-align: center;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-top: -30px;
+  font-size: 17px;
 }
 
 .form-field {
@@ -95,6 +101,36 @@ textarea {
   resize: none;
 }
 
+.actions button {
+  margin-top: 10px;
+}
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  height: 46px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  border: 1px solid var(--color-primary);
+}
+
+.button-filled {
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-primary-light)
+  );
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.button-link {
+  color: var(--color-primary);
+  background-color: inherit;
+}
+
 @media (min-width: 800px) {
   body {
     background-image: url("/assets/images/background.jpg");
@@ -109,5 +145,10 @@ textarea {
   .form-field .group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container h2 {
+    margin-top: -15px;
+    font-size: 20px;
   }
 }
