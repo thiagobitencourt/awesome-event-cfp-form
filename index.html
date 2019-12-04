@@ -11,6 +11,7 @@
       href="./assets/images/pencil.gif"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./assets/styles/radio-button.css" />
   </head>
   <body>
     <header>
@@ -19,6 +20,7 @@
     </header>
 
     <main class="container">
+      <h2>Submition form</h2>
       <form id="survey-form">
         <div class="form-field">
           <label id="name-label" for="name">
@@ -80,25 +82,41 @@
 
         <div class="form-field">
           <label>What are you submitting?</label>
-          <div>
-            <label>
-              <input type="radio" name="sumtitionType" value="talk" />
-              <span>Talk</span>
+          <div class="group">
+            <label class="radio">
+              <input
+                type="radio"
+                class="hidden"
+                name="sumtitionType"
+                value="talk"
+              />
+              <span class="label"></span>Talk
             </label>
-            <label>
-              <input type="radio" name="sumtitionType" value="workshop" />
-              <span>Workshop</span>
+
+            <label class="radio">
+              <input
+                type="radio"
+                class="hidden"
+                name="sumtitionType"
+                value="workshop"
+              />
+              <span class="label"></span>Workshop
             </label>
-            <label>
-              <input type="radio" name="sumtitionType" value="fulltraining" />
-              <span>Full training</span>
+            <label class="radio">
+              <input
+                type="radio"
+                class="hidden"
+                name="sumtitionType"
+                value="fulltraining"
+              />
+              <span class="label"></span>Full training
             </label>
           </div>
         </div>
 
         <div class="form-field">
           <label>Witch sections it belogns?</label>
-          <div>
+          <div class="group">
             <label>
               <input type="checkbox" name="section" value="management" />
               <span>Management</span>

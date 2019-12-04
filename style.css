@@ -5,6 +5,7 @@
   --color-gray: #c4c4c4;
   --color-dark-gray: #3d3d3d;
   --color-gray-blue: #96a9b1;
+  --color-primary: #00b0da;
 }
 
 body {
@@ -39,6 +40,12 @@ body header {
   max-width: 800px;
 }
 
+main h2 {
+  margin: 0;
+  margin-top: -15px;
+  text-align: center;
+}
+
 .form-field {
   margin: 15px 0;
 }
@@ -64,6 +71,16 @@ body header {
   color: var(--color-dark-gray);
 }
 
+.form-field input[type="radio"],
+.form-field input[type="checkbox"] {
+  width: auto;
+}
+
+.form-field .group {
+  display: block;
+  margin: 10px 0;
+}
+
 .form-field select {
   width: 100%;
   background-color: #fff;
@@ -87,5 +104,10 @@ textarea {
 
   body header {
     color: var(--color-dark-gray);
+  }
+
+  .form-field .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
