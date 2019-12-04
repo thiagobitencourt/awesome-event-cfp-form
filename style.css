@@ -2,8 +2,9 @@
 
 :root {
   --color-white: #fff;
-  --color-gray-blue: #96a9b1;
+  --color-gray: #c4c4c4;
   --color-dark-gray: #3d3d3d;
+  --color-gray-blue: #96a9b1;
 }
 
 body {
@@ -32,9 +33,49 @@ body header {
 }
 
 .container {
+  padding: 50px;
   background-color: var(--color-white);
   margin: auto;
   max-width: 800px;
+}
+
+.form-field {
+  margin: 15px 0;
+}
+
+.form-field,
+.form-field label {
+  width: 100%;
+}
+
+.form-field label {
+  color: var(--color-dark-gray);
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.form-field textarea,
+.form-field select,
+.form-field input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+  color: var(--color-dark-gray);
+}
+
+.form-field select {
+  width: 100%;
+  background-color: #fff;
+}
+
+.form-field input::placeholder {
+  color: var(--color-gray-blue);
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
 }
 
 @media (min-width: 800px) {

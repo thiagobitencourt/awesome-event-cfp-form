@@ -20,7 +20,7 @@
 
     <main class="container">
       <form id="survey-form">
-        <div>
+        <div class="form-field">
           <label id="name-label" for="name">
             <span>Full name </span>
             <abbr title="required">*</abbr>
@@ -34,7 +34,7 @@
           />
         </div>
 
-        <div>
+        <div class="form-field">
           <label id="email-label" for="email">
             <span>Email address </span>
             <abbr title="required">*</abbr>
@@ -48,7 +48,7 @@
           />
         </div>
 
-        <div>
+        <div class="form-field">
           <label id="number-label">
             <span>Presentation time</span>
             <abbr title="required">*</abbr>
@@ -58,30 +58,28 @@
             id="number"
             min="1"
             max="8"
-            placeholder="how much time do you need?"
+            placeholder="How much time do you need?"
             required
           />
         </div>
 
-        <div>
+        <div class="form-field">
           <label for="dropdown">
             When would you like to present?
           </label>
-          <div>
-            <select id="dropdown">
-              <option value="">Choose an option</option>
-              <option value="">First day - Morning</option>
-              <option value="">First day - Afternoon</option>
-              <option value="">First day - Night</option>
-              <option value="">Second day - Morning</option>
-              <option value="">Second day - Afternoon</option>
-              <option value="">Second day - Night</option>
-            </select>
-          </div>
+          <select id="dropdown">
+            <option value="">Choose an option</option>
+            <option value="">First day - Morning</option>
+            <option value="">First day - Afternoon</option>
+            <option value="">First day - Night</option>
+            <option value="">Second day - Morning</option>
+            <option value="">Second day - Afternoon</option>
+            <option value="">Second day - Night</option>
+          </select>
         </div>
 
-        <div>
-          <label>What are you submittin?</label>
+        <div class="form-field">
+          <label>What are you submitting?</label>
           <div>
             <label>
               <input type="radio" name="sumtitionType" value="talk" />
@@ -98,7 +96,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="form-field">
           <label>Witch sections it belogns?</label>
           <div>
             <label>
@@ -116,8 +114,11 @@
           </div>
         </div>
 
-        <div>
-          <textarea cols="50" rows="8"></textarea>
+        <div class="form-field">
+          <label id="number-label">
+            <span>Paper abstract</span>
+          </label>
+          <textarea rows="5" maxlength="500"></textarea>
         </div>
 
         <div>
