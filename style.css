@@ -133,7 +133,7 @@ textarea {
 
 @media (min-width: 800px) {
   body {
-    background-image: url("/assets/images/background.jpg");
+    background-image: url("./assets/images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -151,4 +151,29 @@ textarea {
     margin-top: -15px;
     font-size: 20px;
   }
+}
+
+/* CREDITS */
+.credits {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 13px;
+  color: var(--color-dark-gray);
+}
+
+.credits .heart {
+  color: var(--color-primary);
+}
+
+.credits .link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.credits .link:hover {
+  color: var(--color-primary);
+  font-weight: bold;
+  border-bottom: 1px solid;
 }
